@@ -15,3 +15,8 @@ Sentinel monitors incoming IP requests and maintains a temporal window for each 
 - **$O(1)$ Complexity:** Fast window sliding using `collections.deque`.
 - **Memory Efficient:** Automatically purges stale logs to prevent memory leaks.
 - **Scalable:** Uses hash-mapping to track thousands of unique IP addresses.
+
+- ## 🚀 Running the Simulation
+To test the anomaly detection engine against synthetic traffic, run:
+```bash
+python log_simulator.py
