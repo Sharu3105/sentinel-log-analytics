@@ -27,3 +27,9 @@ with open('daily_summary.txt', 'w') as f:
     f.write(f"Total Threats Detected: {len(df)}\n")
     f.write(f"Top Attacker: {ip_counts.index[0]} with {ip_counts.values[0]} attempts\n")
 print("\n📝 daily_summary.txt has been created for your records.")
+
+from alert_system import check_for_critical_threats
+
+# Existing code ends... then add:
+print("\n--- Transitioning to Live Monitoring ---")
+check_for_critical_threats('threat_report_20260307.csv')
