@@ -33,3 +33,8 @@ from alert_system import check_for_critical_threats
 # Existing code ends... then add:
 print("\n--- Transitioning to Live Monitoring ---")
 check_for_critical_threats('threat_report_20260307.csv')
+from report_generator import generate_sentinel_report
+
+# Automatically generate the web report after processing
+print("\n--- Generating Final Intelligence Report ---")
+generate_sentinel_report('threat_report_20260307.csv')
